@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    height: 16vh;
+    background: #0A0A23;
+    position: fixed;
+    top: 0px;
+    border-bottom: rgb(255, 255, 255, 0.1) 0.1rem solid;
+    z-index: 2;
+}
+
+.navMenu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navList {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navElement {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.navElement:hover {
+    border: solid white;
+    border-radius: 40%;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0rem 0rem 0.5rem 0rem white inset;
+}
+
+.navElement a {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5%;
+}
+
+.navElement a h2 {
+    justify-self: center;
+    align-self: center;
+}
+
+.navElement a p {
+    justify-self: start;
+    align-self: start;
+    text-align: center;
+}
+
+main {
+    background: #1B1B32;
+    height: 72vh;
+    margin-top: 16vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.presentacion {
+    grid-column: 2/ 4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.presentacion :nth-child(1) {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.presentacion :nth-child(n+2) {
+    color: white;
+}
+
+footer {
+    width: 100vw;
+    height: 12vh;
+    background: #0A0A23;
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-top: rgb(255, 255, 255, 0.1) 0.1rem solid;
+    z-index: 2;
+}
+
+footer img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+footer img:hover {
+    filter: invert(100%) drop-shadow(0rem 0rem 0.2rem white);
+}
+
+.footerIcons {
+    grid-column: 1/ 2;
+}
+
+.home {
+    grid-column: 5/ 7;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.home a {
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: start;
+}
+
+.home p {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: end;
+}
