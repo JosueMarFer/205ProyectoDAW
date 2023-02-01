@@ -1,3 +1,6 @@
-ErrorDocument 404 /pageError/404.html
-ErrorDocument 403 /pageError/403.html
+ErrorDocument 404 /errors/404.html
+ErrorDocument 403 /errors/403.html
 Options -Indexes +FollowSymLinks
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://daw205.ieslossauces.es/$1 [R,L]
